@@ -1,0 +1,7 @@
+<button
+  class="bg-blue-500 hover:opacity-90 text-white w-full shadow-md px-5 py-2 rounded-md disabled:bg-gray-400 disabled:cursor-not-allowed disabled:opacity-50"
+  (click)="btnClicked.emit()"
+  [disabled]="disable()"
+>
+  {{ label() }}
+</button>
