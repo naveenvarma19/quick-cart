@@ -1,1 +1,12 @@
-<p>cart works!</p>
+<div>
+  <span class="m-12 text-2xl">Shopping Cart</span>
+
+  @for (item of cartService.cart(); track item.id) {
+  <app-cart-item [item]="item" />
+  }
+</div>
+@if(cartService.cart().length){
+<div class="mx-36">
+  <app-order-summary [cart]="cartService.cart()" />
+</div>
+}

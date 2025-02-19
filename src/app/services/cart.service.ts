@@ -15,4 +15,9 @@ export class CartService {
       { ...product, stock: product.stock && product.stock-- },
     ]);
   }
+
+  removeFromCart(product: Product) {
+    console.log(product.title);
+    this.cart.set(this.cart().filter((item: Product) => item.id != product.id));
+  }
 }
