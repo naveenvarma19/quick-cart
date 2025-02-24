@@ -7,6 +7,7 @@ export type Product = {
   price: number;
   image: string;
   stock?: number;
+  cartQuantity: number;
 };
 
 @Component({
@@ -23,6 +24,7 @@ export class ProductListComponent {
       price: 109.95,
       image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
       stock: 10,
+      cartQuantity: 0,
     },
     {
       id: 2,
@@ -31,6 +33,7 @@ export class ProductListComponent {
       image:
         'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg',
       stock: 0,
+      cartQuantity: 0,
     },
     {
       id: 3,
@@ -39,6 +42,7 @@ export class ProductListComponent {
 
       image: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg',
       stock: 5,
+      cartQuantity: 0,
     },
     {
       id: 4,
@@ -46,6 +50,7 @@ export class ProductListComponent {
       price: 15.99,
       image: 'https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg',
       stock: 7,
+      cartQuantity: 0,
     },
   ]);
 }
